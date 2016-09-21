@@ -1,0 +1,117 @@
+@import url("reset.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box; }
+
+a, img {
+  -webkit-tap-highlight-color: transparent; }
+
+input:focus {
+  outline: none; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-size: 16px; }
+
+.box {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  width: 100%;
+  height: .43rem;
+  border-bottom: 1px solid #E6E6E6;
+  text-align: center;
+  line-height: .43rem;
+  font-size: .14rem;
+  color: #919191;
+  -webkit-flex-shrink: 0;
+  position: relative;
+  z-index: 100;
+  color: #282828; }
+  .header a {
+    position: absolute;
+    width: .23rem;
+    height: .23rem;
+    background: url(../img/btn_top_nav_back.png) no-repeat;
+    background-size: 100% 100%;
+    top: .1rem;
+    left: .1rem; }
+
+.nav {
+  width: 100%;
+  -webkit-flex-shrink: 0;
+  position: relative;
+  z-index: 100; }
+  .nav p {
+    width: 100%;
+    font-size: .14rem; }
+    .nav p:nth-of-type(1) {
+      height: .24rem;
+      background: #EBEBEB;
+      padding-left: .15rem;
+      line-height: .24rem;
+      color: #8B8C8E; }
+    .nav p:nth-of-type(2) {
+      height: .45rem;
+      line-height: .45rem;
+      padding-left: .15rem;
+      border-bottom: 1px solid #ECECEC; }
+    .nav p:nth-of-type(3) {
+      height: .45rem;
+      padding-left: .15rem;
+      line-height: .45rem;
+      color: #32ABD8;
+      position: relative; }
+      .nav p:nth-of-type(3) span {
+        position: absolute;
+        width: .15rem;
+        height: .15rem;
+        background: url(../img/icon-active.png) no-repeat;
+        background-size: 100% 100%;
+        top: .15rem;
+        right: .15rem; }
+    .nav p:nth-of-type(4) {
+      height: .24rem;
+      background: #EBEBEB;
+      padding-left: .15rem;
+      line-height: .24rem;
+      color: #8B8C8E; }
+    .nav p:nth-of-type(5) {
+      height: 1rem; }
+      .nav p:nth-of-type(5) a {
+        float: left;
+        width: 10%;
+        height: .33rem;
+        line-height: .33rem;
+        text-align: center;
+        color: #424242; }
+
+.main {
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  position: relative; }
+  .main section {
+    width: 100%;
+    height: 2.12rem; }
+    .main section p {
+      width: 100%;
+      font-size: .14rem;
+      height: .35rem;
+      line-height: .35rem;
+      padding-left: .1rem; }
+    .main section .p {
+      height: .24rem;
+      background: #EBEBEB;
+      padding-left: .1rem;
+      line-height: .24rem;
+      color: #8B8C8E; }
+
+/*# sourceMappingURL=cs.css.map */

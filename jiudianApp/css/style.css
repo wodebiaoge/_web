@@ -1,0 +1,122 @@
+@import url("reset.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box; }
+
+a, img {
+  -webkit-tap-highlight-color: transparent; }
+
+input:focus {
+  outline: none; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-size: 16px; }
+
+.box {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  width: 100%;
+  position: relative;
+  -webkit-flex-shrink: 0; }
+  .header img {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .header span {
+    position: absolute;
+    left: .1rem;
+    bottom: .1rem;
+    color: #fff;
+    font-size: .2rem; }
+
+.main {
+  -webkit-flex-grow: 1;
+  padding-left: .1rem;
+  -webkit-flex-shrink: 1; }
+  .main p {
+    width: 100%;
+    height: .715rem;
+    border-bottom: 1px solid #DCDCDC;
+    position: relative;
+    padding-left: .08rem; }
+    .main p span {
+      display: inline-block;
+      width: 73.5%;
+      height: 100%;
+      position: relative; }
+      .main p span em, .main p span i {
+        display: inline-block;
+        font-style: normal;
+        line-height: .715rem;
+        color: #969696;
+        font-size: .13rem;
+        background: url(../img/icon-yuan.png) no-repeat left;
+        padding-left: .21rem;
+        background-size: .08rem .08rem; }
+      .main p span i {
+        background: none;
+        color: #40BBF4;
+        font-size: .15rem; }
+      .main p span a {
+        position: absolute;
+        width: .1rem;
+        height: .18rem;
+        background: url(../img/right_arrow.png) no-repeat;
+        background-size: 100% 100%;
+        top: .29rem;
+        right: .22rem; }
+    .main p b {
+      position: absolute;
+      width: 26%;
+      height: 100%;
+      border-left: 1px solid #DCDCDC;
+      top: 0px;
+      right: 0px;
+      font-weight: 100;
+      padding-top: .15rem; }
+      .main p b a {
+        display: block;
+        font-size: .14rem;
+        color: #40BBF4;
+        width: 100%;
+        text-align: center;
+        background: url(../img/icon_address2.png) no-repeat top;
+        background-size: .18rem .2rem;
+        padding-top: .25rem; }
+  .main .p span {
+    width: 100%; }
+  .main .p a {
+    right: .12rem; }
+  .main .p i {
+    color: #2E2E2E; }
+  .main .p:nth-of-type(4) i {
+    color: #CACACA; }
+
+footer {
+  width: 100%;
+  height: .55rem;
+  background: #23AEF1;
+  position: relative;
+  bottom: 0px;
+  -webkit-flex-shrink: 0; }
+  footer span {
+    display: block;
+    width: .85rem;
+    line-height: .55rem;
+    color: #fff;
+    margin: 0 auto;
+    background: url(../img/icon-search.png) no-repeat left;
+    background-size: .18rem .2rem;
+    padding-left: .2rem; }
+
+/*# sourceMappingURL=style.css.map */

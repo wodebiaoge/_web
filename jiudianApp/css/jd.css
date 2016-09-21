@@ -1,0 +1,214 @@
+@import url("reset.css");
+* {
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  -webkit-box-sizing: border-box; }
+
+a, img {
+  -webkit-tap-highlight-color: transparent; }
+
+input:focus {
+  outline: none; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%;
+  overflow: hidden; }
+
+body {
+  font-size: 16px; }
+
+.box {
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+header {
+  width: 100%;
+  height: .45rem;
+  -webkit-flex-shrink: 0;
+  border-bottom: 1px solid #E5E5E5;
+  position: relative;
+  z-index: 100; }
+  header a {
+    position: absolute;
+    width: .24rem;
+    height: .24rem;
+    background: url(../img/btn_top_nav_back.png) no-repeat;
+    background-size: 100% 100%;
+    top: .1rem;
+    left: .1rem; }
+  header h1 {
+    width: 100%;
+    height: 100%;
+    line-height: .45rem;
+    text-align: center;
+    font-weight: bold; }
+
+nav {
+  width: 100%;
+  height: .38rem;
+  background: #F6F6F6;
+  border-bottom: 1px solid #DCDDE2;
+  position: relative;
+  z-index: 100;
+  -webkit-flex-shrink: 0; }
+  nav span {
+    line-height: .38rem;
+    font-size: .14rem;
+    color: #666;
+    padding-left: .15rem; }
+  nav a {
+    position: absolute;
+    top: .1rem;
+    right: .15rem;
+    color: #23AEF3;
+    font-size: .14rem;
+    background: url(../img/right_arrow.png) no-repeat right;
+    background-size: .1rem .16rem;
+    padding-right: .13rem; }
+
+main {
+  -webkit-flex-grow: 1;
+  -webkit-flex-shrink: 1;
+  position: relative; }
+  main a {
+    display: block;
+    width: 100%;
+    height: 1.1rem;
+    border-bottom: 1px solid #DDDCE2;
+    padding-top: .18rem;
+    padding-left: .12rem; }
+  main dl {
+    width: 100%;
+    height: 100%;
+    display: -webkit-flex; }
+  main dt {
+    width: .71rem;
+    height: .71rem;
+    -webkit-flex-shrink: 0; }
+    main dt img {
+      width: 100%;
+      height: 100%; }
+  main dd {
+    -webkit-flex-shrink: 1;
+    -webkit-flex-grow: 1;
+    padding-left: .12rem;
+    position: relative; }
+    main dd p:nth-of-type(1) {
+      font-size: .14rem;
+      color: #323232;
+      margin-bottom: .07rem; }
+    main dd p:nth-of-type(2) {
+      font-size: .14rem;
+      color: #FA9126;
+      margin-bottom: .02rem; }
+      main dd p:nth-of-type(2) span {
+        font-size: .12rem;
+        background: #FA9126;
+        color: #fff;
+        padding: .02rem; }
+    main dd p:nth-of-type(3) {
+      margin-bottom: .01rem; }
+      main dd p:nth-of-type(3) span {
+        font-size: .12rem;
+        color: #777777;
+        background: url(../img/icon-wifi.png) no-repeat right;
+        background-size: .1rem .11rem;
+        padding-right: .16rem; }
+    main dd p:nth-of-type(4) {
+      font-size: .12rem;
+      color: #777777; }
+      main dd p:nth-of-type(4) span {
+        float: right;
+        padding-right: .1rem; }
+    main dd p:nth-of-type(5) {
+      position: absolute;
+      color: #F88F26;
+      top: .25rem;
+      right: .1rem;
+      font-size: .18rem; }
+      main dd p:nth-of-type(5) span {
+        font-size: .13rem;
+        color: #777777;
+        margin-left: .05rem; }
+  main .sx {
+    width: 100%;
+    height: .43rem; }
+    main .sx a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      line-height: .43rem;
+      padding: 0px;
+      margin: 0px;
+      border: none;
+      font-size: .15rem;
+      color: #9D9D9D; }
+
+footer {
+  width: 100%;
+  height: .36rem;
+  -webkit-flex-shrink: 0;
+  position: relative;
+  z-index: 200;
+  border-top: 1px solid #24ABEF; }
+  footer a {
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid #DBDBDB; }
+    footer a span {
+      line-height: .36rem;
+      font-size: .14rem;
+      color: #656565;
+      background: url(../img/icon-hui.png) no-repeat right;
+      background-size: .11rem .11rem;
+      padding-right: .15rem; }
+
+.mark {
+  width: 100%;
+  height: 80%;
+  background: #000;
+  opacity: .5;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  display: none;
+  -webkit-transition: height .1s; }
+
+.lst {
+  position: absolute;
+  width: 100%;
+  height: 2rem;
+  background: #fff;
+  bottom: -50%;
+  left: 0px;
+  z-index: 2000;
+  -webkit-transition: bottom .15s; }
+  .lst p {
+    width: 100%;
+    height: .4rem; }
+    .lst p span {
+      float: right;
+      width: .15rem;
+      height: .15rem;
+      margin-top: .125rem;
+      margin-right: .12rem; }
+      .lst p span img {
+        display: block;
+        width: 100%;
+        height: 100%; }
+    .lst p a {
+      line-height: .4rem;
+      font-size: .14rem;
+      padding-left: .22rem;
+      color: #8A8A8A; }
+    .lst p:nth-of-type(1) a {
+      color: #3DB7F6; }
+
+/*# sourceMappingURL=jd.css.map */
