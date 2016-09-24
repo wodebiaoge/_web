@@ -1,0 +1,40 @@
+body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,form{
+	margin:0;
+	padding:0;
+}
+body{ 
+	font-family:"宋体"; 
+	color:#55707B;
+	 font-size:12px;
+}
+ul,ol,li{
+ list-style:none;
+}
+input,select,textarea{
+ vertical-align:middle;
+}
+img{ 
+	border:none;
+	 vertical-align:middle;
+}
+a{ 
+	text-decoration:none;
+	 color:#333333;
+}
+span{
+	cursor: pointer;
+}
+a:hover{
+	text-decoration:underline;
+	cursor: pointer;
+}
+input,textarea:focus{
+	outline:none;
+}
+.clear{ 
+	clear:both; 
+	height:0px;
+	width:0px; 
+	overflow:hidden; 
+	zoom:1
+}
